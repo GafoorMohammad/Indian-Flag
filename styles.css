@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.stick {
+    height: 450px;
+    width: 10px;
+    background: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.flag {
+    width: 270px;
+    height: 180px;
+    position: relative;
+}
+
+.top {
+    height: 60px;
+    background-color: #FF9933;
+}
+
+.middle {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+
+.bottom {
+    height: 60px;
+    background-color: #138808;
+}
+
+/* Ashoka Chakra */
+.wheel {
+    height: 43px;
+    width: 43px;
+    border: 2px solid darkblue;
+    border-radius: 50%;
+    position: relative;
+}
+
+.wheel .line {
+    height: 100%;
+    width: 1px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    background: darkblue;
+    transform-origin: center;
+}
+
+.line:nth-child(1)  { transform: rotate(15deg); }
+.line:nth-child(2)  { transform: rotate(30deg); }
+.line:nth-child(3)  { transform: rotate(45deg); }
+.line:nth-child(4)  { transform: rotate(60deg); }
+.line:nth-child(5)  { transform: rotate(75deg); }
+.line:nth-child(6)  { transform: rotate(90deg); }
+.line:nth-child(7)  { transform: rotate(105deg); }
+.line:nth-child(8)  { transform: rotate(120deg); }
+.line:nth-child(9)  { transform: rotate(135deg); }
+.line:nth-child(10) { transform: rotate(150deg); }
+.line:nth-child(11) { transform: rotate(165deg); }
+.line:nth-child(12) { transform: rotate(180deg); }
+.line:nth-child(13) { transform: rotate(195deg); }
+.line:nth-child(14) { transform: rotate(210deg); }
+.line:nth-child(15) { transform: rotate(225deg); }
+.line:nth-child(16) { transform: rotate(240deg); }
+.line:nth-child(17) { transform: rotate(255deg); }
+.line:nth-child(18) { transform: rotate(270deg); }
+.line:nth-child(19) { transform: rotate(285deg); }
+.line:nth-child(20) { transform: rotate(300deg); }
+.line:nth-child(21) { transform: rotate(315deg); }
+.line:nth-child(22) { transform: rotate(330deg); }
+.line:nth-child(23) { transform: rotate(345deg); }
+.line:nth-child(24) { transform: rotate(360deg); }
+
+/* Wave Animation */
+.wave {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+        128deg, rgba(0, 0, 0, 0) 39%, 
+        rgba(255, 255, 255, 0.5) 46%, 
+        rgba(0, 0, 0, 0) 53%);
+    animation: wavy 4s infinite linear;
+}
+
+@keyframes wavy {
+    0% {
+        background-position: -400px 0px;
+    }
+    100% {
+        background-position: 400px 0px;
+    }
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
